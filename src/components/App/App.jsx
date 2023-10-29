@@ -6,19 +6,12 @@ import user from '../helpner/user.json';
 import data from '../helpner/data.json';
 import friends from '../helpner/friends.json';
 import transactions from '../helpner/transactions.json';
+import { GlobalStyle } from '../GlobalStyled';
+import { WrapperApp } from './App.styled';
 
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
-    >
+    <WrapperApp>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -29,6 +22,7 @@ export const App = () => {
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />;
       <TransactionHistory items={transactions} />;
-    </div>
+      <GlobalStyle />;
+    </WrapperApp>
   );
 };

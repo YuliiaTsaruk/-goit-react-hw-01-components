@@ -1,17 +1,19 @@
+import { Wrapper, Title, List, Item } from './Statistics.styled';
+
 export const Statistics = ({ title, stats }) => {
   return (
-    <section>
-      <h2>{title}</h2>
-      <ul>
+    <Wrapper>
+      <Title>{title}</Title>
+      <List>
         {stats.map(stat => {
           return (
-            <li key={stat.id}>
+            <Item key={stat.id}>
               <span>{stat.label}</span>
               <span>{stat.percentage}%</span>
-            </li>
+            </Item>
           );
         })}
-      </ul>
-    </section>
+      </List>
+    </Wrapper>
   );
 };

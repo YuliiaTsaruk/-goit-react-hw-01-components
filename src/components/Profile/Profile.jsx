@@ -1,3 +1,12 @@
+import {
+  Wrapper,
+  PersonalData,
+  List,
+  ListItem,
+  Name,
+  TitleData,
+  Avatar,
+} from './Profile.styled';
 export const Profile = ({
   username,
   tag,
@@ -6,28 +15,28 @@ export const Profile = ({
   stats: { followers, views, likes },
 }) => {
   return (
-    <div>
-      <div>
-        <img src={avatar} alt={username} width="160" height="160" />
-        <p>{username}</p>
-        <p>@{tag}</p>
-        <p>{location}</p>
-      </div>
+    <Wrapper>
+      <PersonalData>
+        <Avatar src={avatar} alt={username} width="120" height="120" />
+        <Name>{username}</Name>
+        <TitleData>@{tag}</TitleData>
+        <TitleData>{location}</TitleData>
+      </PersonalData>
 
-      <ul>
-        <li>
+      <List>
+        <ListItem>
           <span>Followers</span>
           <span>{followers}</span>
-        </li>
-        <li>
+        </ListItem>
+        <ListItem>
           <span>Views</span>
           <span>{views}</span>
-        </li>
-        <li>
+        </ListItem>
+        <ListItem>
           <span>Likes</span>
           <span>{likes}</span>
-        </li>
-      </ul>
-    </div>
+        </ListItem>
+      </List>
+    </Wrapper>
   );
 };
