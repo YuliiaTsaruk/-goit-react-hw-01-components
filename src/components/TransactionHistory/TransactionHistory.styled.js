@@ -25,6 +25,6 @@ export const Item = styled.td`
   padding-right: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
-  text-align: start;
+  text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
 `;
