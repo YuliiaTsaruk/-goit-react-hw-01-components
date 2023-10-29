@@ -13,6 +13,7 @@ export const FriendItem = styled.li`
   justify-content: start;
   padding: 4px;
   margin-bottom: 10px;
+  gap: 20px;
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
@@ -22,7 +23,6 @@ export const FriendItem = styled.li`
 export const Status = styled.span`
   width: 16px;
   height: 16px;
-  margin-right: 20px;
   margin-left: 20px;
   border-radius: 50%;
   background-color: ${getStatusColor};

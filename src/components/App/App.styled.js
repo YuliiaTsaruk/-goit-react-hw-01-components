@@ -5,8 +5,10 @@ export const WrapperApp = styled.div`
   flex-direction: column;
   gap: 80px;
   padding: 10px;
-  width: 100vh;
-  height: 100vh;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  height: 100%;
   font-size: 16px;
   color: #010101;
 `;
