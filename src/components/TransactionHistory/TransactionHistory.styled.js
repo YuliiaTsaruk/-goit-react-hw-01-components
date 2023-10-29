@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 export const Table = styled.table`
-  width: 90%;
+  width: 60%;
   margin: 0 auto;
   padding: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
